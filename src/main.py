@@ -15,13 +15,13 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f"✅ Logged in as {bot.user}")
+    print(f"Logged in as {bot.user}")
 
     try:
         synced = await bot.tree.sync()
-        print(f"✅ Synced {len(synced)} slash commands.")
+        print(f"Synced {len(synced)} slash commands.")
     except Exception as e:
-        print("❌ Slash sync failed:", e)
+        print("Slash sync failed:", e)
 
 
 # Deck Buttons View
@@ -87,7 +87,7 @@ class DeckView(discord.ui.View):
 
         if interaction.user != self.interaction.user:
             return await interaction.response.send_message(
-                "❌ Only the drawer can press this button.",
+                "Only the drawer can press this button.",
                 ephemeral=True
             )
 
