@@ -7,12 +7,6 @@
   <img src="https://img.shields.io/badge/Project-Hobby%20%26%20Learning-F59E0B?style=for-the-badge"/>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/rajsaksham-32/deckbot?style=for-the-badge&color=brightgreen"/>
-  <img src="https://img.shields.io/github/forks/rajsaksham-32/deckbot?style=for-the-badge&color=blue"/>
-  <img src="https://img.shields.io/github/license/rajsaksham-32/deckbot?style=for-the-badge&color=lightgrey"/>
-</p>
-
 
 
 # Deck of Many Things Discord Bot 🎴
