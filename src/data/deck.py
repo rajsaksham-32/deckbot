@@ -1,11 +1,37 @@
 import random
+import json
+import os
 
-cards = [
-    ("Sun", "You gain 50,000 XP and a wondrous magic item."),
-    ("Void", "Your soul is trapped in an object somewhere."),
-    ("Moon", "You are granted 1d3 wishes.")
-]
+# Load cards from JSON
+json_path = os.path.join(os.path.dirname(__file__), "cards.json")
 
-def draw_card():
-    """Returns one random card from the deck."""
-    return random.choice(cards)
+with open(json_path, "r", encoding="utf-8") as f:
+    CARDS = json.load(f)
+
+# Fool + Jester are special
+FOOL_JESTER = {"Fool", "Jester"}
+
+
+def draw_card(discarded=None):
+    """
+    OFFICIAL RULES:
+    - All cards return to the deck (duplicates allowed)
+    - Fool + Jester are removed after being drawn once per session
+    """
+
+    if discarded is None:
+        discarded = set()
+
+    # Remove Fool/Jester if already drawn
+    available = [c for c in CARDS if c["name"] not in discarded]
+
+    if not available:
+        raise ValueError("No cards available (Fool/Jester already drawn).")
+
+    card = random.choice(available)
+
+    # If Fool or Jester → discard for session
+    if card["name"] in FOOL_JESTER:
+        discarded.add(card["name"])
+
+    return card
