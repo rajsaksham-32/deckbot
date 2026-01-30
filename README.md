@@ -65,6 +65,11 @@ This makes it perfect for:
 -  Final summary embed of all drawn cards
 
 ---
+## Demo
+
+![DeckBot Demo](images/sample.gif)
+
+---
 
 ## Impact (Recruiter-Focused)
 
