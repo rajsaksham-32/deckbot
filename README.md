@@ -1,139 +1,139 @@
 ![Deck of Many Things Banner](images/DOMT.webp)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue" />
-  <img src="https://img.shields.io/badge/discord.py-2.x-green" />
-  <img src="https://img.shields.io/badge/Discord-Slash%20Commands-purple" />
-  <img src="https://img.shields.io/badge/Project-Type%3A%20Hobby%20%26%20Learning-orange" />
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/discord.py-2.x-2CA5E0?style=for-the-badge&logo=discord&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Discord%20Bot-Interactive-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Project-Hobby%20%26%20Learning-F59E0B?style=for-the-badge"/>
 </p>
 
-# Deck of Many Things Discord Bot
+<p align="center">
+  <img src="https://img.shields.io/github/stars/rajsaksham-32/deckbot?style=for-the-badge&color=brightgreen"/>
+  <img src="https://img.shields.io/github/forks/rajsaksham-32/deckbot?style=for-the-badge&color=blue"/>
+  <img src="https://img.shields.io/github/license/rajsaksham-32/deckbot?style=for-the-badge&color=lightgrey"/>
+</p>
 
-A fully interactive Discord bot implementation of the legendary **Deck of Many Things**, built as a hobby project to explore Discord bot development, UI interactions, and structured game logic.
 
-This bot allows users to draw cards from the deck inside Discord through a clean and immersive experience using buttons, embeds, and modern slash commands.
+
+# Deck of Many Things Discord Bot 🎴
+
+An interactive Discord bot inspired by the legendary **Deck of Many Things** from *Dungeons & Dragons*.  
+Built as a personal learning project, this bot explores Discord bot development, UI interactions, and structured game session logic.
+
+Users can draw cards directly inside Discord through a clean, immersive experience powered by embeds, buttons, and modern Discord commands.
 
 ---
 
-## What is the Deck of Many Things?
+## About the Deck of Many Things
 
-The **Deck of Many Things** is one of the most iconic magical artifacts in *Dungeons & Dragons (D&D)*.
+The **Deck of Many Things** is one of the most iconic magical artifacts in D&D.  
+Each card draw can dramatically change the course of an adventure - offering:
 
-It is a mysterious deck of enchanted cards where each draw can bring:
-
-- Great fortune  
 - Powerful rewards  
-- Dangerous curses  
-- Sudden chaos  
-- Unexpected twists in a campaign  
+- Sudden curses  
+- Unexpected chaos  
+- Campaign-altering twists  
 
-Every card has a unique magical effect, making it a famous storytelling and gameplay tool for Dungeon Masters and players alike.
+It’s a classic storytelling tool used by Dungeon Masters to introduce risk, mystery, and excitement.
 
 ---
 
-## Purpose of This Project
+## Project Motivation
 
-This project was created to bring the Deck of Many Things into Discord as an interactive experience.
+This project was created to bring the Deck of Many Things into Discord as an engaging, interactive experience.
 
-With this bot, users can:
+With this bot, players can:
 
-- Start a deck session using `/deck`
-- Declare how many cards they wish to draw through a popup prompt
-- Draw cards one-by-one using interactive buttons
-- View card results through rich Discord embeds
-- End the session early, triggering remaining cards automatically
+- Start a deck session with `/deck`
+- Declare how many cards they intend to draw
+- Reveal cards one at a time through button-based interaction
+- View results in rich embedded card displays
+- End a session early, triggering remaining draws automatically
 
-This makes it perfect for:
+This makes it useful for:
 
 - Online D&D campaigns  
 - Roleplay servers  
-- Fun community interactions  
-- Learning Discord bot development  
+- Community mini-games  
+- Learning Discord application development  
 
 ---
 
 ## Features
 
--  Modern **Slash Command Support** (`/deck`)
--  Modal-based input (Discord popup prompt)
--  Interactive UI buttons:
+- Modern **Slash Command Support** (`/deck`)
+- Modal-based user input (popup prompt)
+- Interactive buttons:
   - Draw Next Card  
   - Stop Drawing  
--  Rich embedded card display with descriptions
--  Image support through hosted URLs or local assets
--  Session-based drawing with proper state tracking
--  Final summary embed of all drawn cards
+- Rich embeds with full card descriptions
+- Card artwork support (local or hosted image URLs)
+- Session-based draw tracking
+- Final summary of all drawn cards at the end of a session
 
 ---
+
 ## Demo
 
 ![DeckBot Demo](images/sample.gif)
 
 ---
 
-## Impact 
+## Technical Highlights
 
-This project demonstrates practical software engineering skills through an engaging real-world application.
+This project demonstrates practical software engineering concepts through a real-time interactive application:
 
-Key highlights include:
+- Event-driven Discord bot architecture  
+- Asynchronous programming with Python  
+- UI-driven command flows using buttons and modals  
+- Modular separation of game logic and bot interaction  
+- Clean state handling across multi-step sessions  
 
-- Built an **interactive Discord application** used for game-based community engagement  
-- Implemented modern **UI-driven command flows** using modals and button interactions  
-- Strengthened knowledge of **asynchronous programming** in Python  
-- Designed clean modular architecture separating game logic and bot interaction  
-- Improved ability to develop user-focused systems with real-time event handling  
-
-This project reflects strong foundations in:
+It reflects strong foundations in:
 
 - Backend development  
-- API integration  
-- Interactive system design  
-- Clean code organization  
+- API-based interaction systems  
+- User-focused application design  
+- Maintainable project structure  
 
 ---
 
-## Tech Stack Used
+## Tech Stack
 
-This project was built using:
+Built using:
 
 - **Python 3**
-- **discord.py (2.x)**  
+- **discord.py (2.x)**
   - Slash commands (`app_commands`)
-  - UI Views & Buttons
-  - Modals for user input
+  - UI Views, Buttons, and Modals
 - **Discord API**
-- **dotenv** for secure token handling
-- Modular project structure (`src/data/deck.py`) for card logic and data handling
+- **python-dotenv** for secure token management
+- Modular architecture (`src/data/`) for deck logic and card data
 
 ---
 
 ## What I Learned
 
-Building and deploying this project helped me gain hands-on experience in:
+Developing and deploying this bot provided hands-on experience with:
 
-- Discord bot architecture and event-driven programming  
-- Slash commands and modern Discord interactions  
-- UI-based user flows with buttons and modals  
-- Maintaining session state across asynchronous interactions  
-- Clean embed formatting and user experience design  
+- Discord bot development and command handling  
+- Building interactive user flows with modern Discord UI components  
+- Managing session state across asynchronous events  
+- Designing clean embed-based user experiences  
 - Structuring a Python project professionally  
-- Using external assets (image hosting + URLs)
+- Working with external assets such as hosted card artwork  
 
-Additionally, I learned how to deploy and host a real Discord bot for public use, including:
+It also introduced real deployment workflows, including:
 
-- Configuring cloud deployment platforms (Railway/Render)  
-- Managing environment variables securely (bot tokens, `.env`)  
-- Writing deployment startup files such as `Procfile` and `requirements.txt`  
-- Debugging deployment issues through build logs and runtime monitoring  
-
-This project strengthened my understanding of real-world asynchronous programming, deployment workflows, and interactive application development.
-
+- Environment variable management  
+- Cloud hosting platforms (Railway/Render)  
+- Debugging production runtime issues through logs  
 
 ---
 
-## How to Run Locally (Personal Use)
+## Running Locally
 
-Follow these steps to use the bot on your own machine:
+To run the bot on your own machine:
 
 ---
 
@@ -154,7 +154,8 @@ DISCORD_TOKEN=your_bot_token_here
 
 # Run the Bot
 
-python main.py
+python main.py / python -m src.main
+# Basically depending on where your main.py is
 
 # Use in Discord
 # Once the bot is online, type:
@@ -164,25 +165,26 @@ python main.py
 
 # Future Improvements
 
-- Planned enhancements for this project include:
-- Card effect automation (instead of only descriptions)
+Planned enhancements include:
+- Automated handling of card effects (beyond descriptions)
 - Multi-user session support
-- Deck reshuffling + draw history tracking
+- Deck reshuffling and draw history tracking
 - Campaign logging features
-- Configurable house rules for custom decks
+- Configurable house rules and custom decks
 
 
 # Disclaimer
 
-This project is a fan-made hobby implementation created for learning and entertainment purposes.
+This is a fan-made, non-commercial project created purely for learning and entertainment.
+
 All rights, names, and concepts related to the Deck of Many Things belong to:
-Wizards of the Coast (WotC)
-(Dungeons & Dragons intellectual property)
-I do not claim ownership of any official D&D content.
-This project is purely non-commercial and intended as a personal development project.
+
+Wizards of the Coast (Dungeons & Dragons)
+
+I do not claim ownership of any official D&D intellectual property.
 
 
 # Author
 
 Developed by Saksham Raj
-A hobby project combining software engineering, game design inspiration, and Discord interaction development.
+A hobby project combining software engineering practice with game design inspiration and interactive Discord development.
