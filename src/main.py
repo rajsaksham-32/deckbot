@@ -151,9 +151,9 @@ class DeckModal(discord.ui.Modal, title="🎴 Deck of Many Things"):
         await interaction.channel.send("Deck Ready:", view=view)
 
 
-# ----------------------------
+
 # Slash Command: /deck
-# ----------------------------
+
 @bot.tree.command(name="deck", description="Draw from the Deck of Many Things")
 async def deck(interaction: discord.Interaction):
 
