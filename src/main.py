@@ -44,7 +44,7 @@ class DeckView(discord.ui.View):
         self.current += 1
 
         embed = discord.Embed(
-            title=f"🎴 Draw {self.current}/{self.total_draws}: {card['num']}. {card['name']}",
+            title=f"Draw {self.current}/{self.total_draws}: {card['num']}. {card['name']}",
             description=card["desc"],
             color=discord.Color.gold()
         )
@@ -148,7 +148,7 @@ class DeckModal(discord.ui.Modal, title="🎴 Deck of Many Things"):
         )
 
         view = DeckView(interaction, total)
-        await interaction.channel.send("🎴 Deck Ready:", view=view)
+        await interaction.channel.send("Deck Ready:", view=view)
 
 
 # ----------------------------
