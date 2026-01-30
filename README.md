@@ -71,7 +71,7 @@ This makes it perfect for:
 
 ---
 
-## Impact (Recruiter-Focused)
+## Impact 
 
 This project demonstrates practical software engineering skills through an engaging real-world application.
 
