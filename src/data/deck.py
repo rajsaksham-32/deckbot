@@ -22,7 +22,7 @@ def draw_card(discarded=None):
     if discarded is None:
         discarded = set()
 
-    # Remove Fool/Jester if already drawn
+    # Remove Fool/Jester if already pulled
     available = [c for c in CARDS if c["name"] not in discarded]
 
     if not available:
@@ -30,7 +30,7 @@ def draw_card(discarded=None):
 
     card = random.choice(available)
 
-    # If Fool or Jester → discard for session
+    # If Fool or Jester -> discard for session
     if card["name"] in FOOL_JESTER:
         discarded.add(card["name"])
 

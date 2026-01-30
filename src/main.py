@@ -24,9 +24,7 @@ async def on_ready():
         print("❌ Slash sync failed:", e)
 
 
-# ----------------------------
 # Deck Buttons View
-# ----------------------------
 class DeckView(discord.ui.View):
     def __init__(self, interaction, total_draws):
         super().__init__(timeout=3600)
@@ -76,7 +74,7 @@ class DeckView(discord.ui.View):
         )
 
         final_embed = discord.Embed(
-            title="✅ Deck Complete!",
+            title="Deck Complete!",
             description="Cards drawn:\n\n" + summary,
             color=discord.Color.green()
         )
@@ -108,7 +106,7 @@ class DeckView(discord.ui.View):
 
         if interaction.user != self.interaction.user:
             return await interaction.response.send_message(
-                "❌ Only the drawer can stop.",
+                "Only the drawer can stop.",
                 ephemeral=True
             )
 
@@ -116,9 +114,9 @@ class DeckView(discord.ui.View):
         await self.finish_deck(forced=True)
 
 
-# ----------------------------
+
 # Modal Popup for Card Count
-# ----------------------------
+
 class DeckModal(discord.ui.Modal, title="🎴 Deck of Many Things"):
 
     cards = discord.ui.TextInput(
@@ -134,18 +132,18 @@ class DeckModal(discord.ui.Modal, title="🎴 Deck of Many Things"):
 
             if total < 1:
                 return await interaction.response.send_message(
-                    "❌ Must draw at least 1 card.",
+                    " Must draw at least 1 card.",
                     ephemeral=True
                 )
 
         except:
             return await interaction.response.send_message(
-                "❌ Please enter a valid number.",
+                " Please enter a valid number.",
                 ephemeral=True
             )
 
         await interaction.response.send_message(
-            f"✅ You declared **{total}** card(s).\n"
+            f" You declared **{total}** card(s).\n"
             "Press **Draw Next Card** to begin."
         )
 
