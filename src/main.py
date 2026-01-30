@@ -4,7 +4,7 @@ from discord import app_commands
 import os
 from dotenv import load_dotenv
 
-from src.data.deck import draw_card
+from data.deck import draw_card
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
