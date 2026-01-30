@@ -102,7 +102,7 @@ This project was built using:
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 Building and deploying this project helped me gain hands-on experience in:
 
