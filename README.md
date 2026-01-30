@@ -9,7 +9,7 @@
 
 
 
-# Deck of Many Things Discord Bot 🎴
+# Deck of Many Things Discord Bot 
 
 An interactive Discord bot inspired by the legendary **Deck of Many Things** from *Dungeons & Dragons*.  
 Built as a personal learning project, this bot explores Discord bot development, UI interactions, and structured game session logic.
