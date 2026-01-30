@@ -102,9 +102,9 @@ This project was built using:
 
 ---
 
-## What I Learned
+## 📚 What I Learned
 
-Building this project helped me gain hands-on experience in:
+Building and deploying this project helped me gain hands-on experience in:
 
 - Discord bot architecture and event-driven programming  
 - Slash commands and modern Discord interactions  
@@ -114,7 +114,15 @@ Building this project helped me gain hands-on experience in:
 - Structuring a Python project professionally  
 - Using external assets (image hosting + URLs)
 
-This project strengthened my understanding of real-world asynchronous programming and interactive application development.
+Additionally, I learned how to deploy and host a real Discord bot for public use, including:
+
+- Configuring cloud deployment platforms (Railway/Render)  
+- Managing environment variables securely (bot tokens, `.env`)  
+- Writing deployment startup files such as `Procfile` and `requirements.txt`  
+- Debugging deployment issues through build logs and runtime monitoring  
+
+This project strengthened my understanding of real-world asynchronous programming, deployment workflows, and interactive application development.
+
 
 ---
 
