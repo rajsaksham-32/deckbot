@@ -83,7 +83,7 @@ This project demonstrates practical software engineering concepts through a real
 - Modular separation of game logic and bot interaction  
 - Clean state handling across multi-step sessions  
 
-It reflects strong foundations in:
+It also helped me get used to:
 
 - Backend development  
 - API-based interaction systems  
